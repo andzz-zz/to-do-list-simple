@@ -1,0 +1,109 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  border: 1px solid rgba(46, 34, 36, 0.452);
+  font-size: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 10px 10px;
+  border-radius: 25px;
+
+
+}
+
+body {
+
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+}
+
+#container {
+ margin: auto;
+ background-color: rgba(46, 34, 36, 0.452);
+ max-width: 400px;
+ height: 80vh;
+ border: 2px solid rgba(46, 34, 36, 0.589);
+  
+}
+
+#input-form {
+  margin-top: 30px;
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+
+#inputText {
+  width: 70%;
+  height: 20px;
+  border: 1px solid rgba(46, 34, 36, 0.589);
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  
+} 
+
+#addTask {
+  background-color: aliceblue;
+  width: 40px;
+  height: 20px;
+  border: 1px solid rgba(17, 2, 4, 0.322);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+
+ul li {
+  list-style: none;
+  padding: 20px 20px;
+  font-size: 15px;
+  position: relative;
+  white-space: no-wrap;
+  text-overflow: ellipsis,;
+  overflow: hidden;
+  size: 50px;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 15px;
+}
+
+ul li.checked{
+  color: grey;
+  text-decoration: line-through;
+}
+
+ul {
+  width: 300px;
+  height: 600px;
+  background-color: rgba(240, 248, 255, 0.575);
+  margin:20px 25px 30px 50px ;
+  text-align: left;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color : #000000;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+ul li span:hover {
+
+  color: grey;
+}
